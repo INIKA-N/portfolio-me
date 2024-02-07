@@ -1,0 +1,118 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  background-color:white;
+}
+
+.name-input,
+.contact-input {
+  margin-top: 100px;
+  width: 600px;
+  height: 50px;
+}
+
+.email-input,
+.sub-input {
+  margin-top: 10px;
+  width: 600px;
+  height: 50px;
+}
+
+.msg-input {
+  margin-top: 10px;
+  width: 1000px;
+  height: 120px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin-bottom: 20px;
+  gap: 20px;
+  margin-left:300px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color:transparent;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 200px;
+  
+}
+
+.submit-button:hover {
+  background-color: black;
+  color:white;
+}
+
+
+.contact-container {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 30px;
+  margin-bottom: 2px; /* Added margin-bottom for spacing */
+}
+
+.contact-container::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px; /* Adjusted height to 2px */
+  background: grey;
+  transition: width 0.3s ease-out, background 0.3s ease-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.contact-container:hover::after {
+  width: 100%;
+  background: black;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    height: 900px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Adjusted width for smaller screens */
+    margin: 30px auto 20px; /* Centered and adjusted margin for spacing */
+  }
+
+  .name-input,
+  .contact-input,
+  .email-input,
+  .sub-input,
+  .msg-input {
+    width: 80%;
+    height: 50px;
+    margin: 10px auto; /* Centered and adjusted margin for spacing */
+  }
+
+  .msg-input {
+    height: 120px;
+  }
+
+  .submit-button {
+    width: 40%;
+    margin: 10px auto 20px; /* Centered and adjusted margin for spacing */
+  }
+}

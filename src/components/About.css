@@ -1,0 +1,104 @@
+/* About.css */
+
+.about {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+}
+
+.animated-underline {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    margin-top: 110px;
+    font-size: 30px;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    width: 18%;
+    height: 2px;
+    background: linear-gradient(to right, black 50%, rgb(155, 151, 151) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    bottom: 0;
+    top: 55px;
+    left: 650px;
+    transition: background-position 0.3s ease-out;
+}
+
+.animated-underline:hover::after {
+    background-position: 0 0;
+}
+
+.about h3 {
+    margin-top: 40px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.about h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 50px;
+    color: rgb(124, 123, 123);
+}
+
+.about p {
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 50px;
+    color: rgb(55, 54, 54);
+}
+
+.progress-container {
+    margin-top: 50px;
+    margin-left: auto; /* Align the progress container to the right */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.progress-item {
+    flex-basis: calc(50% - 10px); /* 50% width with some margin */
+    margin: 0 0 20px 10px; /* Adjust margin for items (0 0 20px 10px for spacing on the right) */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 20px;
+    color: rgb(124, 123, 123);
+    margin-bottom: 8px; /* Add some space between label and progress bar */
+}
+
+progress {
+    width: 80%;
+    height: 20px;
+    margin-left: 20px; /* Align the progress bar to the right */
+}
+
+/* Responsive styles for smaller screens */
+
+@media (max-width: 767px) {
+    .about {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .animated-underline::after {
+        left: 50%; /* Center the underline on smaller screens */
+        transform: translateX(-50%);
+    }
+
+    .about h3,
+    .about h2,
+    .about p {
+        margin-left: 20px; /* Adjust the margin for smaller screens */
+    }
+
+    .progress-container {
+        margin-left: 20px; /* Adjust the margin for smaller screens */
+    }
+}

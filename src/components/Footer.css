@@ -1,0 +1,37 @@
+/* Footer.css */
+.footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 0 15px;
+  }
+  
+  .column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .column p {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  
+  .column:not(:last-child) {
+    border-right: 1px solid #fff; /* Add a border between columns */
+  }
+  
+  .copyright-section {
+    margin-top: 20px;
+  }
+  

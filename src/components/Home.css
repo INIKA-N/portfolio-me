@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image {
+  flex: 1;
+  width: 20%;
+  height: 40%;
+  display: flex;
+  margin-left: 200px; /* Adjusted margin for right placement */
+  /* Add effects */
+  overflow: hidden; /* Ensure the rounded corners are visible */
+  
+  transition: transform 0.3s ease; /* Adds a smooth transition effect */
+  animation: slideInRight 1s ease forwards; /* Add animation for sliding in from the right */
+}
+
+.image img {
+  width: 50%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image:hover {
+  transform: scale(1.1); /* Scales the image slightly on hover */
+}
+
+/* Animation Keyframes */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.name {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.name h4 {
+  color: #556b2f;
+  font-size: 18px;
+  margin-top: 5px ;
+  margin-left:600px;
+}
+
+.name h3 {
+  color: #333;
+  font-size: 42px;
+  margin: 5px 0;
+  margin-left:600px;
+}
+
+.line {
+  width: 34%;
+  height: 2px;
+  background: #333;
+  margin: 15px auto;
+  margin-left:600px;
+}
+
+.sk p {
+  color: #556b2f;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  margin-left:600px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  margin-left:600px;
+}
+
+.social-icons a {
+  color: #0077b5;
+  font-size: 35px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #005183;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  background-color: #0077b5;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 50px;
+  transition: background-color 0.3s ease;
+  margin-left:600px;
+}
+
+.btn:hover {
+  background-color: #005183;
+}
+
+@media (max-width: 600px) {
+  .container {
+    text-align: center; /* Center-align content */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .line {
+    width: 95%;
+    height: 2px;
+    background: #333;
+    margin: 15px auto;
+    margin-left:6px;
+  }
+  .name h4,
+  .name h3,
+  .sk p,
+  .social-icons,
+  .btn {
+    margin-left: 0; /* Reset margin-left */
+    text-align: center; /* Center align text */
+  }
+
+  .image {
+    margin-left:180px; /* Reset margin-left */
+    margin-right: auto; /* Reset margin-right */
+    order: -1; /* Move the image to the top */
+    width: 50%; /* Adjust width of image */
+    height: auto; /* Reset height */
+    max-height: 200px; /* Limit the height to make it a square */
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+  }
+}
+

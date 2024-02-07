@@ -1,0 +1,85 @@
+.wo{
+    height: 600px;
+    background-color: aliceblue;
+}
+.wo .btn {
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    background-color: #0077b5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: background-color 0.3s ease;
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+}
+
+.project {
+    width: calc(33.33% - 20px); /* 33.33% width for each project box with some gap */
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box; /* To include padding and border in width calculation */
+    height: 300px;
+    margin: 10px; /* Add margin for spacing between boxes */
+    display: inline-block; /* Display boxes in a row */
+    vertical-align: top; /* Align boxes to the top */
+    position: relative; /* Enable positioning for absolute positioning of inner elements */
+    overflow: hidden; /* Hide overflow content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding box shadow for a subtle effect */
+    margin-top:100px;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Adding a slight upward lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increasing box shadow on hover */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    transition: transform 0.3s ease; /* Adding transition effect for image */
+}
+
+.project:hover img {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 20px; /* Adjust font size */
+    color: #333; /* Text color */
+}
+
+.project p {
+    font-size: 16px; /* Adjust font size */
+    color: #666; /* Text color */
+    margin-top: 10px; /* Add margin to separate paragraphs */
+}
+
+.project a {
+    display: block;
+    margin-top: 10px;
+}
+/* CSS for screen sizes less than 600px */
+@media (max-width: 600px) {
+    .wo{
+        height:900px;
+    }
+    .project {
+        width: calc(100% - 60px); /* Full width for each project box with some gap */
+        height: auto; /* Auto height */
+        margin: 10px 20px;
+        /* Center the boxes */
+    }
+   .wo  .btn {
+        width: 50%;
+        height: 40px;
+        font-size: 16px;
+    }
+}

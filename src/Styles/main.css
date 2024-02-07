@@ -1,0 +1,85 @@
+/* main.css */
+
+.bar {
+    background-color: aliceblue; /* Set your desired background color */
+    padding: 20px 20px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end; /* Move elements to the right */
+    align-items: center;
+  }
+  
+  nav a {
+    color: #111010; /* Set your desired text color */
+    text-decoration: none;
+    margin: 0 45px; /* Adjust margin as needed */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add a smooth transition for color change */
+  }
+  
+  nav a:hover {
+    color:lightcoral; /* Set your desired hover color */
+  }
+  /* main.css */
+
+/* Add this media query to hide the nav links by default for smaller screens */
+@media screen and (max-width: 600px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: aliceblue;
+      z-index: 1000;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-links a {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .burger-icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .burger-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: #111010;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  
+    .change.bar1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .change.bar2 {
+      opacity: 0;
+    }
+  
+    .change.bar3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
+  /* Add this style to hide the burger icon for larger screens */
+  @media screen and (min-width: 601px) {
+    .burger-icon {
+      display: none;
+    }
+  }
+  
