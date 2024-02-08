@@ -142,12 +142,13 @@ body {
   }
 
   .image {
-    margin-left:180px; /* Reset margin-left */
-    margin-right: auto; /* Reset margin-right */
+    margin-left:145px; /* Reset margin-left */
+    margin-right: auto;
+     /* Reset margin-right */
     order: -1; /* Move the image to the top */
     width: 50%; /* Adjust width of image */
-    height: auto; /* Reset height */
-    max-height: 200px; /* Limit the height to make it a square */
+    height: 200px; /* Reset height */
+    max-height: 150px; /* Limit the height to make it a square */
     object-fit: cover; /* Ensure the image covers the entire container */
   }
 
