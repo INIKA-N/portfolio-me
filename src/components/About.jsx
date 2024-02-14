@@ -18,7 +18,7 @@ function About() {
                 <h3>Hi I'm Inika</h3>
                 <h2>Developer - Designer - Student</h2>
                 <p>
-                Aspiring web developer and UI/UX designer with a passion for seamlessly integrating design and functionality.
+                Aspiring  developer and UI/UX designer with a passion for seamlessly integrating design and functionality.
                     <br></br>
                     Dedicated to creating user-centric experiences, I seek to leverage strong interpersonal skills and leadership qualities
                     <br></br> to lead collaborative teams and drive innovative digital solutions.
