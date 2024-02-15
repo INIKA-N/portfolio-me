@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaGithub, FaKaggle } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaKaggle } from 'react-icons/fa'; // Ensure FaLeetcode is imported
 import { SiLeetcode } from "react-icons/si";
 import './Home.css';
 import { Link } from 'react-scroll';
 import Navbar from './Navbar';
-import myImage from '../assets/myImage.jpg';
+import myImage from '../assets/myImage.jpg'; // Relative path from the current file
 
 function Home() {
     const [name, setName] = useState('INIKA');
@@ -39,15 +39,15 @@ function Home() {
                             <FaKaggle />
                         </a>
                         <a href='https://leetcode.com/21CSR065/' target='_blank' rel='noopener noreferrer'>
-                            <SiLeetcode />
+                        <SiLeetcode />
                         </a>
                     </div>
-                    <a href="C:\Users\M N INIKA\portfolio\portfolio\public\Resume.pdf" download="resume.pdf">
+                    <a href="/Home">
                         <button type="submit" className="btn">Download CV</button>
                     </a>
                 </div>
                 <div className='image'>
-                    <img src={myImage} alt="My Image" />
+                    <img src={myImage} alt="My Image" /> {/* Use the imported image */}
                 </div>
             </div>
         </>
