@@ -25,7 +25,7 @@ function Home() {
                     </div>
                     <div className='line'></div>
                     <div className='sk'>
-                        <p>ux designer / </p>
+                        <p>ux designer / front end developer</p>
                     </div>
                     <div className='line'></div>
                     <div className='social-icons'>
