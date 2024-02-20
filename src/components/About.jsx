@@ -15,7 +15,7 @@ function About() {
         <>
             <div className="about">
                 <h4 className='animated-underline'>About Me</h4>
-                <h3>Hi I'm Inika</h3>
+                <h3></h3>
                 <h2>Developer - Designer - Student</h2>
                 <p>
                 Aspiring web developer and UI/UX designer with a passion for seamlessly integrating design and functionality.
